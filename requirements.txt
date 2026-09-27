@@ -1,1 +1,2 @@
-speedtest-cli-ng
+setuptools
+speedtest-cli
