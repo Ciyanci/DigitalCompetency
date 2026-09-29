@@ -2,6 +2,7 @@ import urllib.request as urec
 import time
 from speed_test import get_speed
 from use_case import wifiUse
+from test_history import save_result
 
 def run_speed_check():
     print("\nTesting your connection speed, please wait 10-30 seconds...")
