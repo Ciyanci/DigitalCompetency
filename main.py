@@ -43,7 +43,7 @@ def main():
         elif choice == "2":
             show_history()
 
-       elif choice == "3":
+        elif choice == "3":
             show_history()
             try:
                 num1 = int(input("\nEnter first test number: "))
