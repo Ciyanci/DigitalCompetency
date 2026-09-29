@@ -2,6 +2,7 @@ import urllib.request as urec
 import time
 from speed_test import get_speed
 from test_history import compare_results, save_result, show_history
+from use_case imoort recommend
 
 def run_speed_check():
     print("\nTesting your connection speed, please wait 10-30 seconds...")
@@ -11,6 +12,7 @@ def run_speed_check():
     print(f"Ping:       {ping:.1f} ms")
     
     save_result(download, upload, ping)
+    recommend(download, upload, ping)
 # Verifying if user is connected to internet
 def check_internet():
     host = "http://www.google.com"
