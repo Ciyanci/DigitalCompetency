@@ -1,8 +1,8 @@
 import urllib.request as urec
 import time
 from speed_test import get_speed
+from test_history import compare_results, save_result, show_history
 from use_case import wifiUse
-from test_history import save_result
 
 def run_speed_check():
     print("\nTesting your connection speed, please wait 10-30 seconds...")
@@ -12,6 +12,7 @@ def run_speed_check():
     print(f"Ping:       {ping:.1f} ms")
     
     wifiUse(download,upload,ping)
+    save_result(download, upload, ping)
 # Verifying if user is connected to internet
 def check_internet():
     host = "http://www.google.com"
