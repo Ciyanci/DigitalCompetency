@@ -30,6 +30,8 @@ def main():
 
     while True:
         print("\n1. Test my connection speed")
+        print("2. Show speed test history")
+        print("3. Compare two past tests")
         print("5. Exit")
         choice = input("Choose an option (1-5): ").strip()
 
@@ -39,7 +41,20 @@ def main():
             else:
                 print("\nPlease connect to the internet first")
                 time.sleep(2)
+
+        elif choice == "2":
+            show_history()
+
+       elif choice == "3":
+            show_history()
+            try:
+                num1 = int(input("\nEnter first test number: "))
+                num2 = int(input("Enter second test number: "))
+                compare_results(num1, num2)
+            except ValueError:
+                print("Invalid input. Please enter valid numbers.")
                 break 
+                
         elif choice =="5":
             print("Adios Amigo!")
             break
