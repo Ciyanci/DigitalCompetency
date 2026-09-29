@@ -1,7 +1,3 @@
-import csv
-import os
-from datetime import datetime
-
 def save_result(download, upload, ping):
     file_exists = os.path.exists("wifi_history.csv")
     
