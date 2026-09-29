@@ -2,7 +2,7 @@ import urllib.request as urec
 import time
 from speed_test import get_speed
 from test_history import compare_results, save_result, show_history
-from use_case imoort recommend
+from use_case import recommend
 
 def run_speed_check():
     print("\nTesting your connection speed, please wait 10-30 seconds...")
