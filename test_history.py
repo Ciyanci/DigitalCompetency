@@ -1,3 +1,7 @@
+import csv
+import os
+from datetime import datetime
+
 def save_result(download, upload, ping):
     file_exists = os.path.exists("wifi_history.csv")
     
@@ -17,7 +21,7 @@ def show_history():
         return
 
     with open("wifi_history.csv", "r", encoding="utf-8") as file:
-        rows = list(csv.reader(file))[1:] # Skip header row
+        rows = list(csv.reader(file))[1:]
         
         print("\n--- PAST RESULTS ---")
         for index, row in enumerate(rows, 1):
