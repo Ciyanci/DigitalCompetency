@@ -56,7 +56,3 @@ def recommend(download,upload,ping):
     else:
         print("Connection Quality: Very Slow")
         print("- Basic messaging only")
-
-
-
-main()
