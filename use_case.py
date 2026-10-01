@@ -1,14 +1,3 @@
-def main():
-
-    print("WIFI USE CASE RECOMMENDATION")
-
-    download=checkNum("Enter download speed (Mbps): ")
-    upload=checkNum("Enter upload speed (Mbps): ")
-    ping=checkNum("Enter ping (ms): ")
-
-    recommend(download,upload,ping)
-
-
 def checkNum(message):
     check=0
 

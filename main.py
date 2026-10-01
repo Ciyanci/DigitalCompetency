@@ -59,7 +59,7 @@ def main():
             print("Adios Amigo!")
             break
         else:
-            print("Invalid option. Please enter 1, 2, 3 ,4, or 5")
+            print("Invalid option. Please enter 1, 2, 3, or 5")
 
 if __name__ == "__main__":
     main()
