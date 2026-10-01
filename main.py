@@ -32,8 +32,8 @@ def main():
         print("\n1. Test my connection speed")
         print("2. Show speed test history")
         print("3. Compare two past tests")
-        print("5. Exit")
-        choice = input("Choose an option (1-5): ").strip()
+        print("4. Exit")
+        choice = input("Choose an option (1-4): ").strip()
 
         if choice == "1":
             if check_internet():
