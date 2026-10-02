@@ -41,6 +41,7 @@ def main():
             else:
                 print("\nPlease connect to the internet first")
                 time.sleep(2)
+                return False
 
         elif choice == "2":
             show_history()
